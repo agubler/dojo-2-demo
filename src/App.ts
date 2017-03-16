@@ -8,9 +8,14 @@ export default class App extends WidgetBase {
 
 	private _stranger = true;
 
-	protected render(): DNode {
-		const { _stranger: stranger } = this;
+	private _toggleStranger() {
+		this._stranger = !this._stranger;
+		this.invalidate();
+	}
 
-		return w(HelloWorld, { stranger });
+	protected render(): DNode {
+		const { _stranger: stranger, _toggleStranger: toggleStranger } = this;
+
+		return w(HelloWorld, { stranger, toggleStranger });
 	}
 }
