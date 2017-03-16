@@ -5,7 +5,7 @@ import { ThemeableMixin, theme } from '@dojo/widget-core/mixins/Themeable';
 
 import * as css from './styles/HelloWorld.css';
 
-const HelloWorldBase = ThemeableMixin(WidgetBase);
+export const HelloWorldBase = ThemeableMixin(WidgetBase);
 
 @theme(css)
 export default class HelloWorld extends HelloWorldBase<WidgetProperties> {
