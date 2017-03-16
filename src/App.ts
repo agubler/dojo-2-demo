@@ -5,7 +5,12 @@ import { w } from '@dojo/widget-core/d';
 import HelloWorld from './widgets/HelloWorld';
 
 export default class App extends WidgetBase {
+
+	private _stranger = true;
+
 	protected render(): DNode {
-		return w(HelloWorld, {});
+		const { _stranger: stranger } = this;
+
+		return w(HelloWorld, { stranger });
 	}
 }
