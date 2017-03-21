@@ -1,7 +1,7 @@
 import { CustomElementDescriptor } from '@dojo/widget-core/customElements';
 import HelloWorld from './HelloWorld';
 
-export default function createDialogElement(): CustomElementDescriptor {
+export default function createHelloWorldElement(): CustomElementDescriptor {
 	return {
 		tagName: 'dojo-hello-world',
 		widgetConstructor: HelloWorld,
