@@ -9,7 +9,7 @@ export const HelloWorldBase = ThemeableMixin(WidgetBase);
 
 @theme(css)
 export default class HelloWorld extends HelloWorldBase<WidgetProperties> {
-	render() {
+	protected render(): DNode {
 		return v('div', { classes: this.classes(css.hello) }, [ 'Hello, Dojo World!' ]);
 	}
 }
