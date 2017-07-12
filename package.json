@@ -19,6 +19,6 @@
     "@types/node": "^6.0.46",
     "chai": "^3.5.0",
     "intern": "~3.4.1",
-    "typescript": "~2.3.4"
+    "typescript": "~2.4.1"
   }
 }
